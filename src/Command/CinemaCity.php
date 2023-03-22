@@ -107,6 +107,8 @@ class CinemaCity extends Command
             ]);
         }
         $table->render();
+
+        return Command::SUCCESS;
     }
 
     /**
