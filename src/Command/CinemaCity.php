@@ -61,7 +61,7 @@ class CinemaCity extends Command
         $api_key = $input->getOption('api-key');
 
         $guzzle_client = new Client();
-        $response = $guzzle_client->request('GET', 'https://www1.cinemacity.bg/bg/data-api-service/v1/quickbook/10106/film-events/in-cinema/' . $cinema . '/at-date/' . $date, [
+        $response = $guzzle_client->request('GET', 'https://www.cinemacity.bg/bg/data-api-service/v1/quickbook/10106/film-events/in-cinema/' . $cinema . '/at-date/' . $date, [
             'query' => [
                 'lang' => 'en_GB',
             ]
